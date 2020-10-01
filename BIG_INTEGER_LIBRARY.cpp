@@ -1,12 +1,13 @@
 /*
   Big Integer library in C++, single file implementation.
  */
+
 #include <iostream>
 #include <string>
 #include <sstream>
 #include <math>
 #define MAX 10000 // for strings
-// MAX length of a String So number can be as high as 10^(10000)
+// MAX length of a string, So number can be as high as 10^(10000)
 
 using namespace std;
 
@@ -69,11 +70,11 @@ int main() {
     return 0;
 }
 
-//------------------------------------------------------------------------------
+/*------------------------------------------------------------------------------*/
 
 BigInteger::BigInteger() { // empty constructor initializes to zero
     number = "0";
-    sign = false;// false means +ve
+    sign = false;// false means positive (+ve)
 }
 
 BigInteger::BigInteger(string s) { // "string" constructor
